@@ -1,0 +1,315 @@
+/*
+----------------------
+common setup
+----------------------
+*/
+@media screen and (min-width: 1272px) {
+    body {
+        font-size: calc(1.1 * 1rem);
+    }
+}
+
+@media (screen) and (min-width: 0px) and (max-width: 1271px) {
+    body {
+        font-size: calc((1.1 - 1) * 1.2vh + 1rem);
+    }
+}
+
+@font-face {
+    font-family: gugi-regular;
+    src: url('../fonts/Gugi-Regular.ttf');
+}
+
+.main-font {
+    font-family: gugi-regular;
+}
+
+.main-color {
+    color: #403E3B;
+}
+
+.main-bg {
+    background-color: #FFF8ED;
+}
+
+.sub-bg {
+    background-color: #403E3B;
+}
+
+.sub-color {
+    color: #FFF8ED;
+}
+
+.t-center {
+    text-align: center;
+}
+
+
+/*
+----------------------
+common custom setup
+----------------------
+*/
+.pd-10rem {
+    padding: 10rem 0rem;
+}
+
+.fz1-1 {
+    font-size: 1.1rem;
+}
+
+/* 
+----------------------
+header
+----------------------
+*/
+.nav-font-size {
+    font-size: 21px;
+}
+
+.asin-logo a .font-logo {
+    font-family: gugi-regular;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.asin-logo {
+    padding: 10px 0px;
+    min-width: 200px;
+    padding-left: 15px;
+}
+
+.icon-header {
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.header-icon {
+    font-size: 1.5rem;
+}
+
+.change_class:hover {
+    color: #403E3B;
+}
+
+.image-logo {
+    height: 35px;
+    width: auto;
+}
+
+@media (min-width: 992px) {
+    .menu-header {
+        max-width: 80%;
+        --bs-scroll-height: 50px;
+    }
+
+    .icon-header {
+        width: 20%;
+        justify-content: space-around;
+    }
+}
+
+.navbar-custom-default {
+    padding: 0px;
+}
+
+.asin-navbar {
+    justify-content: space-between;
+}
+
+.asin-navbar ul li {
+    /* display: flex; */
+    margin: 0px 20px;
+    padding: 0px 0px;
+    float: left;
+}
+
+.asin-full-menu {
+    width: 100%;
+}
+
+.menu-header li a {
+    color: #403E3B;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+#header {
+    position: sticky;
+    background-color: #FFF8ED;
+    top: 0;
+}
+
+#scroll-header {
+    box-shadow: 0 -3px 10px 0 #403E3B;
+}
+
+/* 
+----------------------
+about us
+----------------------
+*/
+.asin-about {
+    padding: 50px 0px;
+}
+
+.asin-about .about-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.asin-about .about-image img {
+    height: auto;
+    border-radius: 25px;
+}
+
+.asin-about .about-text .ptext {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.asin-about .about-text .ptext h1 {
+    font-family: gugi-regular;
+    font-size: 10rem;
+    font-weight: 400;
+}
+
+/* 
+----------------------
+home/ index
+----------------------
+*/
+.asin-content {
+    background-color: #807C77;
+    color: #FFF8ED;
+}
+
+.content-block {
+    height: 400px;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-block-child {
+    height: 400px;
+    text-align: center;
+    padding: 15px 30px;
+    border: solid #FFF8ED;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-button {
+    padding: 15px 35px;
+    border-radius: 15px;
+    background-color: #FFF8ED;
+    color: #807C77;
+    border-color: #FFF8ED;
+    font-weight: bold;
+}
+
+.content-button:hover {
+    background-color: #FFF8ED;
+    color: #807C77;
+    border-color: #FFF8ED;
+    font-weight: bold;
+}
+
+/* 
+----------------------
+blog
+----------------------
+*/
+.btn-search {
+    height: 34px;
+    border-radius: 16px;
+    box-shadow: none;
+    border: 1px solid #403E3B;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-search__text {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #403E3B;
+    word-wrap: break-word;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    height: 30px;
+    font-size: 21px;
+    width: 80%;
+}
+
+.block-search-icon {
+    font-size: 1.5rem;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.center-search-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-image-title__parent img {
+    max-width: 100%;
+    width: 100%;
+    height: 62vh;
+    border-radius: 25px;
+}
+
+.blog-block {
+    margin: 2rem 0rem;
+}
+
+.blog-block-content {
+    margin: 15px 25px;
+}
+
+@media only screen and (max-width: 720px) {
+    .blog-block-content {
+        margin: 15px 15px;
+    }
+}
+
+.blog-title a {
+    color: #403E3B;
+    text-decoration: none;
+}
+
+.blog-title a:hover {
+    color: #403E3B;
+    text-decoration: none;
+}
+
+.blog-post-content {
+    height: 28vh;
+}
+
+/* 
+----------------------
+footer
+----------------------
+*/
+.asin-footer {
+    background-color: #807C77;
+    color: #FFF8ED;
+    border-top: solid #F75EDE;
+}
