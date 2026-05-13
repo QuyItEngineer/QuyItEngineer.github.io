@@ -5,221 +5,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='robots' content='max-image-preview:large' />
     <title>Hoàng Bùi Ngọc Quý</title>
+    <meta name='robots' content='max-image-preview:large' />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <meta name="theme-color" content="#0a0a0b">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Gugi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/info.css">
 </head>
 
-<body class="home page-template-default main-color main-bg">
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-custom-default" id="scroll-header">
-            <div class="container">
-                <div class="asin-logo" id="scroll-logo">
-                    <a class="navbar-brand" href="./index.html">
-                        <span class="font-logo">QUY</span>
-                        <!-- <img src="./images/asin-logo.png" alt="asin" class="image-logo"> -->
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse fz1-1 asin-navbar" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll menu-header">
-                        <li class="nav-item">
-                            <a class="nav-link active main-font nav-font-size" aria-current="page"
-                                href="#me">about me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active main-font nav-font-size" aria-current="page" href="#benefits">benefits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active main-font nav-font-size" aria-current="page"
-                                href="#contract">contract</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex icon-header">
-                        <a class="change_class main-color" href="https://www.facebook.com/quyguru" target="_blank" aria-label="facebook">
-                            <span class="header-icon bi bi-facebook"></span>
-                        </a>
-                        <a class="change_class main-color" href="https://www.youtube.com/channel/UCmEsJ4o2-4IN9Hy9GSGgQAg" target="_blank" aria-label="YouTube">
-                            <span class="header-icon bi bi-youtube"></span>
-                        </a>
-                        <a class="change_class main-color" href="#" target="_blank" aria-label="twitter">
-                            <span class="header-icon bi bi-twitter"></span>
-                        </a>
-                    </div>
-                </div>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="nav-container">
+            <a class="logo" href="./index.html">QUY</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#me" class="nav-link">About</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-socials">
+                <a href="https://www.facebook.com/quyguru" target="_blank" aria-label="Facebook" class="social-icon">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCmEsJ4o2-4IN9Hy9GSGgQAg" target="_blank" aria-label="YouTube"
+                    class="social-icon">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Twitter" class="social-icon">
+                    <!-- <i class="bi bi-twitter-x"></i> -->
+                </a>
             </div>
         </nav>
     </header>
-    <section id="me">
-        <div class="container">
-            <div class="row asin-about">
-                <div class="col-lg-7 about-text">
-                    <div class="ptext text-center">
-                        <div>
-                            <h1>I am<h1>
-                        </div>
-                        <div>
-                            <!-- <p>
-                                a software engineer, especially working in website development.
-                                <br />
-                                <br />
-                                an expert in software development.
-                            </p> -->
-                            <p>
-                                a Software Engineer with 7 years in full-stack web development (FS Developer with a heavy focus on Backend architecture and system scalability), specializing in building scalable, high-performance applications.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="gift-mail">
 
-                    </div>
-                </div>
-                <div class="col-lg-5 about-image">
-                    <img src="./images/quyhbn.png" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="asin-content" id="benefits" style="padding: 60px 0px;">
+    <!-- Hero / About Me -->
+    <section id="me" class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-12 content-block">
-                    <div class="content-block-child">
-                        <div class="content-image">
-                            <!-- <img src="#" alt="blog"> -->
-                            <h2>High-quality</h2>
-                        </div>
-                        <div class="content-text">
-                            <p>Because I am enthusiastic and very careful when I working.
-                            </p>
-                        </div>
-                        <div class="">
-                            <a href="https://www.facebook.com/quyguru" class="btn content-button">CONNECT NOW</a>
-                        </div>
+            <div class="hero-grid">
+                <div class="hero-text reveal">
+                    <span class="hero-badge">Software Engineer</span>
+                    <h1 class="hero-title">
+                        I am <span class="gradient-text">Quy</span>
+                    </h1>
+                    <p class="hero-description">
+                        a software engineer, especially working in website development.
+                    </p>
+                    <p class="hero-description">
+                        an expert in software development.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://www.facebook.com/quyguru" target="_blank" class="btn-primary">
+                            <span>Connect with me</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="#benefits" class="btn-secondary">Learn more</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 content-block">
-                    <div class="content-block-child">
-                        <div class="content-image">
-                            <!-- <img src="#" alt="learn"> -->
-                            <h2>Full stack</h2>
-                        </div>
-                        <div class="content-text">
-                            <p>I have over 7 years of experience in website development.
-                            </p>
-                        </div>
-                        <div class="">
-                            <a href="https://www.facebook.com/quyguru" class="btn content-button" target="_blank">
-                                CONNECT NOW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12 content-block">
-                    <div class="content-block-child">
-                        <div class="content-image">
-                            <!-- <img src="#" alt="join"> -->
-                            <h2>Professional</h2>
-                        </div>
-                        <div class="content-text">
-                            <p>Because I am an expert in the field of software. Attitude to work with me is the most important.
-                            </p>
-                        </div>
-                        <div class="">
-                            <a href="https://www.facebook.com/quyguru" class="btn content-button">CONNECT NOW</a>
-                        </div>
+                <div class="hero-image reveal reveal-delay-1">
+                    <div class="image-wrapper">
+                        <img src="./images/quyhbn.png" alt="Quy - Software Engineer" loading="eager">
+                        <div class="image-decoration"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero-bg-grid"></div>
     </section>
-    <section>
-        <div class="container">
-            <div class="row asin-about pd-10rem">
-                <div class="col-lg-12 about-text">
-                    <div class="ptext text-center">
-                        <div>
-                            <h1 style="color: #F75EDE;">i</h1>
-                        </div>
-                        <div>
-                            <h2 style="font-size: 3rem; font-weight: 700;">
-                                WHAT’S THE <span style="color: #F75EDE;">#1 MOST IMPORTANT THING</span><br />
-                                YOU WANT TO CONNECT RIGHT NOW?
-                            </h2>
-                        </div>
-                        <div>
-                            <p>
-                                Yes, I think so too. Are you having software development problems?
-                                <br />
-                                Let me help you solve it. Connect with me.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="asin-content" style="padding: 80px 0px;">
-        <div class="container">
-            <div class="row asin-about">
-                <div class="col-lg-12 content-text">
-                    <div class="ptext text-center">
-                        <div>
-                            <h1 style="font-size: 4rem;">MISSION</h1>
-                        </div>
-                        <div class="mt-5">
-                            <p>
-                                I have a mission to bring positive values to the community in terms of material as well as spiritual values. <br />
-                                I bring customers quality products, right process and professionalism.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="padding: 80px 0px;">
-        <div class="container" id="contract">
-            <div class="row asin-about pd-10rem">
-                <div class="col-lg-5 about-image">
-                    <img src="images/coffee.jpeg" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-7 about-text">
-                    <div class="ptext text-center">
-                        <div class="mt-5">
-                            <h2 style="font-size: 4rem;">coffee with me</h2>
-                        </div>
-                        <div>
-                            <img src="./images/contract.png" alt="contract" class="img-fluid" style="width: 80%;">
-                        </div>
-                    </div>
-                    <div class="gift-mail">
 
+    <!-- Benefits / Bento Grid -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Why choose me</span>
+                <h2 class="section-title">What I bring to the table</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-large reveal">
+                    <div class="bento-icon">
+                        <i class="bi bi-gem"></i>
+                    </div>
+                    <h3>High-quality</h3>
+                    <p>Because I am enthusiastic and very careful when I working.</p>
+                    <a href="https://www.facebook.com/quyguru" target="_blank" class="bento-link">
+                        Connect now <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="bento-card reveal reveal-delay-1">
+                    <div class="bento-icon">
+                        <i class="bi bi-layers"></i>
+                    </div>
+                    <h3>Full stack</h3>
+                    <p>I have over 7 years of experience in website development.</p>
+                    <a href="https://www.facebook.com/quyguru" target="_blank" class="bento-link">
+                        Connect now <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="bento-card reveal reveal-delay-2">
+                    <div class="bento-icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h3>Professional</h3>
+                    <p>Because I am an expert in the field of software. Attitude to work with me is the most important.
+                    </p>
+                    <a href="https://www.facebook.com/quyguru" target="_blank" class="bento-link">
+                        Connect now <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card reveal">
+                <div class="cta-content">
+                    <h2>
+                        What's the <span class="gradient-text">#1 most important thing</span>
+                        you want to connect right now?
+                    </h2>
+                    <p>
+                        Yes, I think so too. Are you having software development problems?
+                        Let me help you solve it. Connect with me.
+                    </p>
+                    <a href="https://www.facebook.com/quyguru" target="_blank" class="btn-primary btn-glow">
+                        <span>Let's talk</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="mission-content reveal">
+                <span class="section-tag">My purpose</span>
+                <h2 class="mission-title">MISSION</h2>
+                <div class="mission-text">
+                    <p>
+                        I have a mission to bring positive values to the community in terms of material as well as
+                        spiritual values.
+                    </p>
+                    <p>
+                        I bring customers quality products, right process and professionalism.
+                    </p>
+                </div>
+                <div class="mission-stats">
+                    <div class="stat">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Dedication</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Position</span>
+                        <span class="stat-label">FullStack Dev</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="asin-footer">
+
+    <!-- Contact / Coffee -->
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="row pt-3 pb-3">
-                <div class="col-lg-12 col-12 text-center">
-                    © 2021 <span class="main-font">QUY</span> . All rights reserved.
+            <div class="section-header reveal">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Coffee with me</h2>
+                <p class="section-subtitle">Let's grab a coffee and discuss how I can help bring your ideas to life.</p>
+            </div>
+            <div class="contact-cards">
+                <a href="tel:+0840374213940" class="contact-card reveal">
+                    <div class="contact-card-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">Phone</span>
+                        <span class="contact-card-value">(+084) 0374213940</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right contact-card-arrow"></i>
+                </a>
+                <a href="mailto:hoangbuingocquy@gmail.com" class="contact-card reveal reveal-delay-1">
+                    <div class="contact-card-icon icon-pink">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">Email</span>
+                        <span class="contact-card-value">hoangbuingocquy@gmail.com</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right contact-card-arrow"></i>
+                </a>
+                <a href="https://maps.google.com/?q=1122+Ngo+Quyen,+Da+Nang,+Viet+Nam" target="_blank"
+                    class="contact-card reveal reveal-delay-2">
+                    <div class="contact-card-icon icon-blue">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">Address</span>
+                        <span class="contact-card-value">1122 Ngo Quyen, Da Nang, Viet Nam</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right contact-card-arrow"></i>
+                </a>
+                <a href="https://www.facebook.com/quyguru" target="_blank" class="contact-card reveal reveal-delay-3">
+                    <div class="contact-card-icon icon-green">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="contact-card-body">
+                        <span class="contact-card-label">Facebook</span>
+                        <span class="contact-card-value">Connect with me on Facebook</span>
+                    </div>
+                    <i class="bi bi-arrow-up-right contact-card-arrow"></i>
+                </a>
+            </div>
+            <!-- Coffee decoration -->
+            <div class="coffee-decoration reveal">
+                <div class="coffee-cup">
+                    <i class="bi bi-cup-hot"></i>
                 </div>
+                <p>Ready to start something great together?</p>
+                <a href="https://www.facebook.com/quyguru" target="_blank" class="btn-primary btn-glow">
+                    <span>Schedule a chat</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
             </div>
         </div>
-        </section>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="./index.html" class="footer-logo">QUY</a>
+                <div class="footer-links">
+                    <a href="#me">About</a>
+                    <a href="#benefits">Benefits</a>
+                    <a href="#mission">Mission</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/quyguru" target="_blank" aria-label="Facebook"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCmEsJ4o2-4IN9Hy9GSGgQAg" target="_blank"
+                        aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
+                </div>
+                <p class="footer-copy">&copy; 2021 <span class="logo-font">QUY</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu
+                    document.getElementById('navLinks').classList.remove('active');
+                    document.getElementById('navToggle').classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile nav toggle
+        document.getElementById('navToggle').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Header scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Scroll reveal animations
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Cursor glow effect (desktop only)
+        if (window.matchMedia('(pointer: fine)').matches) {
+            const glow = document.getElementById('cursorGlow');
+            document.addEventListener('mousemove', (e) => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+                glow.style.opacity = '1';
+            });
+            document.addEventListener('mouseleave', () => {
+                glow.style.opacity = '0';
+            });
+        }
+    </script>
 </body>
 
 </html>
